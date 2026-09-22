@@ -55,6 +55,7 @@
 
         #docker
         dockerls.enable = true;
+        docker_compose_language_service.enable = true;
 
         #bash
         bashls.enable = true;
@@ -66,6 +67,9 @@
         ts_ls.enable = true;
       };
     };
-
+  };
+  filetype.pattern = {
+    "docker-compose.*\\.ya?ml" = "yaml.docker-compose";
+    "compose.*\\.ya?ml" = "yaml.docker-compose";
   };
 }

@@ -18,6 +18,7 @@
         lua = [ "luacheck" ];
         dockerfile = [ "hadolint" ];
         yaml = [ "yamllint" ];
+        "yaml.docker-compose" = [ "yamllint" ];
       };
       autoCmd = {
         event = [
@@ -41,6 +42,8 @@
     luajitPackages.luacheck
     hadolint
     yamllint
+    dockerfile-language-server
+    docker-compose-language-service
   ];
   diagnostic.settings = {
     virtual_text = true;
