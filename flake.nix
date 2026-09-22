@@ -25,7 +25,7 @@
       packages = forAllSystems (
         system:
         let
-          sharkNixvim = nixvim.legacyPackages.${system}.makeNixvim (import ./nixvim.nix);
+          sharkNixvim = nixvim.legacyPackages.${system}.makeNixvim (import ./nixvim/nixvim.nix);
         in
         {
           default = sharkNixvim;
