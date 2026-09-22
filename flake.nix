@@ -2,7 +2,7 @@
   description = "shark flavored nixvim config";
 
   inputs = {
-    nixpkgs.url = "github:NixOs/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
   };
 
@@ -25,7 +25,8 @@
       packages = forAllSystems (
         system:
         let
-          sharkNixvim = nixvim.legacyPackages.${system}.makeNixvim (import ./nixvim/nixvim.nix);
+          pkgs = nixpkgs.legacyPackages.${system};
+          sharkNixvim = nixvim.legacyPackages.${system}.makeNixvim (import ./nixvim/nixvim.nix { inherit pkgs; });
         in
         {
           default = sharkNixvim;

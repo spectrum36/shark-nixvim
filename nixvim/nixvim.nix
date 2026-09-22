@@ -1,9 +1,9 @@
-{
+{ pkgs, ... }:{
   imports = [
     ./options.nix
     ./lsp.nix
     ./plugins.nix
     ./treesitter.nix
-    #./lint.nix
+    (import ./lint.nix { inherit pkgs; })
   ];
 }
