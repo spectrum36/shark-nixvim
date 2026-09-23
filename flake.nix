@@ -33,7 +33,7 @@
             inherit pkgs;
             module = import ./nixvim/nixvim.nix { inherit pkgs; };
           };
-  phoneNixvim = nixvim.legacyPackages.${system}.makeNixvimWithModule {
+          phoneNixvim = nixvim.legacyPackages.${system}.makeNixvimWithModule {
             inherit pkgs;
             module = import ./phone-nixvim/nixvim.nix { inherit pkgs; };
             };
@@ -42,7 +42,7 @@
           default = sharkNixvim;
           nvim = sharkNixvim;
           pvim = pkgs.runCommand "pvim" {} ''
-            mkdir $out/bin
+            mkdir -p $out/bin
             ln -s ${phoneNixvim}/bin/nvim $out/bin/pvim
           '';
         }
