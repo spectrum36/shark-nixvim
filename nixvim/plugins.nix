@@ -11,6 +11,5 @@
     nix.enable = true;
     nvim-autopairs.enable = true;
     nvim-surround.enable = true;
-    rainbow.enable = true;
   };
 }
