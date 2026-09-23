@@ -1,6 +1,6 @@
 {
   colorschemes.nightfox.enable = false;
-  colorschemes.monofly.enable = true;
+  colorschemes.moonfly.enable = true;
   opts = {
     number = false;
   };
