@@ -1,9 +1,9 @@
-{
+{ lib, ... }: {
   plugins = {
-    bufferline.enable = true;
-    lualine.enable = true;
+    bufferline.enable = lib.mkDefault true;
+    lualine.enable = lib.mkDefualt true;
     commentary.enable = true;
-    oil.enable = true;
+    oil.enable = lib.mkDefault true;
     colorizer = {
       enable = true;
       autoLoad = true;

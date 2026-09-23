@@ -35,7 +35,7 @@
           };
           phoneNixvim = nixvim.legacyPackages.${system}.makeNixvimWithModule {
             inherit pkgs;
-            module = import ./phone-nixvim/nixvim.nix { inherit pkgs; };
+            module = import ./nixvim/phone-nixvim.nix { inherit pkgs; };
             };
         in
         {

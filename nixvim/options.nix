@@ -1,7 +1,7 @@
-{
-  colorschemes.nightfox.enable = true;
+{ lib, ... }: {
+  colorschemes.nightfox.enable = lib.mkDefault true;
   opts = {
-    number = true;
+    number = lib.mkDefault true;
     tabstop = 2;
     shiftwidth = 2;
     expandtab = true;
