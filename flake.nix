@@ -25,8 +25,14 @@
       packages = forAllSystems (
         system:
         let
-          pkgs = nixpkgs.legacyPackages.${system};
-          sharkNixvim = nixvim.legacyPackages.${system}.makeNixvim (import ./nixvim/nixvim.nix { inherit pkgs; });
+          pkgs = import nixpkgs {
+            inherit system;
+            config.allowUnfree = true;
+          };
+          sharkNixvim = nixvim.legacyPackages.${system}.makeNixvimWithModule {
+            inherit pkgs;
+            module = import ./nixvim/nixvim.nix { inherit pkgs; };
+          };
         in
         {
           default = sharkNixvim;

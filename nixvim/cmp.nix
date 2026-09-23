@@ -59,13 +59,6 @@ in
             };
           }
           {
-            name = "gitlab";
-            priority = 1000;
-            option = {
-              hosts = [ "https://gitlab.dnm.radiofrance.fr" ];
-            };
-          }
-          {
             name = "nvim_lsp_document_symbol";
             priority = 1000;
             option = {
@@ -89,10 +82,6 @@ in
             option = {
               inherit get_bufnrs;
             };
-          }
-          {
-            name = "copilot";
-            priority = 400;
           }
           {
             name = "rg";
@@ -121,10 +110,6 @@ in
           {
             name = "calc";
             priority = 150;
-          }
-          {
-            name = "emoji";
-            priority = 100;
           }
         ];
       };
