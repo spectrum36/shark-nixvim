@@ -1,5 +1,6 @@
 { pkgs, ... }:{
   imports = [
+    ./neocord.nix
     ./rainbow.nix
     ./options.nix
     ./lsp.nix

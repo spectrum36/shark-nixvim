@@ -14,6 +14,7 @@
     fugitive.enable = true;
     fidget.enable = true;
     gitsigns.enable = true;
+    telescope.enable = true;
     web-devicons = {
       enable = true;
       settings = {
