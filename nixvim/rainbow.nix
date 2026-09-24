@@ -5,13 +5,13 @@
       active = 1;
       conf = {
         guifgs = [
-          "#7d8618"
+          "yellow"
           "darkorange3"
           "seagreen3"
           "firebrick"
         ];
         ctermfgs = [
-          "#7d8618"
+          "yellow"
           "darkorange3"
           "seagreen3"
           "firebrick"
