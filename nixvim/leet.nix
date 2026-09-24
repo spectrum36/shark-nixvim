@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       lang = "python3";
-      storage = "~/Projects/leet";
+      storage = "/home/spec/Projects/leet";
     };
   };
 }
