@@ -22,9 +22,6 @@
           "start=/\\[/ end=/\\]/ fold"
           "start=/{/ end=/}/ fold"
         ];
-        seperately = {
-          "*" = { };
-        };
       };  
     };
   };

@@ -11,5 +11,15 @@
     nix.enable = true;
     nvim-autopairs.enable = true;
     nvim-surround.enable = true;
+    fugitive.enable = true;
+    fidget.enable = true;
+    gitsigns.enable = true;
+    web-devicons = {
+      enable = true;
+      settings = {
+        color_icons = true;
+        strict = true;
+      };
+    };
   };
 }

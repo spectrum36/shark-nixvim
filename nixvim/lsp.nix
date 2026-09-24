@@ -6,7 +6,7 @@
       enable = true;
       servers = {
         nixd = {
-          enable = true;
+          enable = false;
           settings =
             let
               flake = ''(builtins.getFlake "github:elythh/flake)""'';
