@@ -1,10 +1,6 @@
 { pkgs, ... }:{
   imports = [
     ./phone-overrides.nix
-    ./options.nix
-    ./lsp.nix
-    ./plugins.nix
-    ./treesitter.nix
-    (import ./lint.nix { inherit pkgs; })
+    (import ./common.nix { inherit pkgs; })
   ];
 }
