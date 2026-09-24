@@ -1,5 +1,4 @@
 { lib, ... }: {
-  colorschemes.nightfox.enable = lib.mkDefault true;
   opts = {
     number = lib.mkDefault true;
     tabstop = 2;
