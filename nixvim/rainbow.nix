@@ -1,6 +1,6 @@
 {
   plugins.rainbow = {
-    enable = true;
+    enable = false;
     settings = {
       active = 1;
       conf = {
