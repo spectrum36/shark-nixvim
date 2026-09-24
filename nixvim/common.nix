@@ -1,6 +1,5 @@
 { pkgs, ... }:{
   imports = [
-    ./leetcode.nix
     ./neocord.nix
     ./rainbow.nix
     ./options.nix
