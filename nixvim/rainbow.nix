@@ -14,6 +14,7 @@
         parentheses = [
           "start=/(/ end=/)/ fold"
           "start=/\\[/ end=/\\]/ fold"
+          "start=/{/ end=/}/ fold"
         ];
       };  
     };
