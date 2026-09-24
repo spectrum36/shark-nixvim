@@ -21,5 +21,6 @@
         strict = true;
       };
     };
+    trouble.enable = true;
   };
 }
