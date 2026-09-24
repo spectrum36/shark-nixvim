@@ -10,6 +10,12 @@
           "seagreen3"
           "firebrick"
         ];
+        ctermfgs = [
+          "#7d8618"
+          "darkorange3"
+          "seagreen3"
+          "firebrick"
+        ];
         operators = "_,_";
         parentheses = [
           "start=/(/ end=/)/ fold"
